@@ -18,7 +18,7 @@ body{
 .home-section .navbar{
     width: 100%;
     background-color: white;
-    z-index: 1030;
+    /* z-index: 1030; */
     background: linear-gradient(to right, #EA5FBA,#E47D72,#CF96F7);
 }
 .home-section .collapse ul a:hover{
@@ -27,7 +27,7 @@ body{
 }
 #namev a{
     color: aliceblue;
-    margin-right: 47%;
+    /* margin-right: 47%; */
     font-size: 18px;
     font-family: none;
 }
@@ -370,11 +370,12 @@ color: #fff;
         text-decoration: none;
         font-weight: 600;
     }
-    @media  (min-width:320px)and (max-width:800px)
+    @media  (min-width:320px)and (max-width:480px)
     {
         #images1{
           width: 100%;
-            min-height: 100vh;}
+            min-height: 100vh;
+        }
             .service-box {
 
                 margin-top: 65px;
@@ -386,9 +387,26 @@ color: #fff;
                     font-family: 'Montserrat';
                    width: 100%;
                     }
+                    #location img{
+    
+                        width: 39px;
+                        margin-top: 10px;
+                       
+                      
+                        border-radius: 78px;
+                        background: #a5b1a5;
+                        text-align: center;
+                        box-shadow: 0 0 0 10px #d5dde5;
+                      
+                        margin-right: 80px;
+                        font-size: 2rem;
+                       
+                        text-align: center;
+                    
+                      }
            
         }
-        @media  (min-width:320px)and (max-width:800px)
+        @media  (min-width:320px)and (max-width:480px)
         {
             
                 #inputme textarea{
@@ -408,11 +426,11 @@ color: #fff;
                
             
 
-@media  (min-width:320px)and (max-width:800px)
+@media  (min-width:320px)and (max-width:480px)
     {
   .container-fluid h1{
            
-            font-size: 5.5rem;
+            font-size: 4.5rem;
             color: #ffffff;
             margin-top: 113px;
             margin-left: 0;
@@ -438,6 +456,25 @@ color: #fff;
             font-size: 1.5rem;
         /* width: 100%; */
         }
+        .location{
+    
+            width: 39px;
+            margin-top: 10px;
+            width: 39px;
+            margin-top: 10px;
+           
+          
+            border-radius: 78px;
+            background: #a5b1a5;
+            text-align: center;
+            box-shadow: 0 0 0 10px #d5dde5;
+          
+            margin-right: 29px;
+            font-size: 2rem;
+           
+           align-content: center;
+        
+          }
         .container-fluid{
  
     min-height: 100vh;
