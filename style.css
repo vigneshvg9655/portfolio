@@ -27,7 +27,7 @@ body{
 }
 #namev a{
     color: aliceblue;
-    /* margin-right: 47%; */
+    margin-right: 47%;
     font-size: 18px;
     font-family: none;
 }
@@ -387,6 +387,12 @@ color: #fff;
                     font-family: 'Montserrat';
                    width: 100%;
                     }
+                    #namev a{
+                        color: aliceblue;
+                        margin-right: 0;
+                        font-size: 18px;
+                        font-family: none;
+                    }
                     #location img{
     
                         width: 39px;
@@ -398,7 +404,7 @@ color: #fff;
                         text-align: center;
                         box-shadow: 0 0 0 10px #d5dde5;
                       
-                        margin-right: 80px;
+                        /* margin-right: 80px; */
                         font-size: 2rem;
                        
                         text-align: center;
@@ -448,7 +454,7 @@ color: #fff;
         }
         .container-fluid h4{
            
-            /* text-align: center; */
+            text-align:start;
             color: #ffffff;
             /* font-family:'Montserrat'; */
             font-family: 'Roboto';
