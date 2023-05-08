@@ -34,27 +34,7 @@
 </head>
 
 <body>
-  <script>
-
-
-    var x = 0;
-    
-    function front() 
-    {
-     var ar = new Array("images/cube1.jpg","images/cube.webp","images/cube1.jpg","images/cube1.jpg");x++;
-    
-    
-     if (x > 4) {
-  x = 0;
-    clearInterval;
-     }
-    document.getElementById("im").src = ar[x];
-    }
-    setInterval(front,3000);
   
-  
-  
-    </script>
  
     <section id="header" >
         <div class="container">
@@ -63,7 +43,7 @@
               logo" id="mainNav">
               <div class="container" id="namev">
                 <a class="navbar-brand" href="#">
-                  <h5> <img src="images/icons8-java-50.png" alt=""> VIGNESH.M</h5>
+                  <h5 > <img src="images/icons8-java-50.png" alt="" data-aos="fade-down" data-aos-duration="3000" > VIGNESH.M</h5>
                 </a>
                 <button class="navbar-toggler" type="button"
                   data-bs-toggle="collapse"
@@ -113,7 +93,9 @@
   <div class="col-12  col-sm-12 col-md-12 col-lg-2 mb-2"> </div>
     <div class="col-12  col-sm-12 col-lg-8 mb-8" data-aos="fade-down" data-aos-duration="3000" >   <h1 id="vg"> Hi'  <br> I AM VIGNESH</h1>
       <h3 id="vg"> Full Stack Developer</h3>
-      <h4>  I am Vignesh, B.E  Computer Science graduate from Anna University. I am passionate about technology and software development, and I am excited to share my skills and experiences with you through this portfolio. </h4> </div>
+
+      <h4> 
+         I am Vignesh, B.E  Computer Science graduate from Anna University. I am passionate about technology and software development, and I am excited to share my skills and experiences with you through this portfolio. </h4> </div>
     
     <div class="col-12  col-sm-12 col-lg-2 mb-2"> </div>
 </div>
@@ -125,13 +107,17 @@
 
 <div class="container">
     <div class="row"> 
+      <!-- background: linear-gradient(to right, #cc2b5e, #753a88); -->
    
         <div class=" head col-12  col-xs-12 col-lg-12" id="about" >
           
           <h3>full stack  Developer</h3>
           <!-- <a href=""><img src="images/html0.webp" alt=""> </a> -->
           
-          <h5> I am a recent computer science graduate from Anna University with a strong background in HTML, CSS, JavaScript, and Java programming languages. During my college years, I had the opportunity to work on several projects that helped me develop my skills and expand my knowledge of software development.
+          <h5> 
+            
+            <!-- <span id="imagescom">  <a href=""><img src="images/angular.png" alt="">  </span></a>  -->
+             I am a recent computer science graduate from Anna University with a strong background in HTML, CSS, JavaScript, and Java programming languages. During my college years, I had the opportunity to work on several projects that helped me develop my skills and expand my knowledge of software development.
 
             One of my most significant projects was the Iris Recognition Voting System, which I developed during my final year of college. This project demonstrated my ability to use my programming skills to create a useful and innovative application. In addition to my academic work, I also completed a three-month training program in Java, where I gained valuable experience and insights into the industry.
             
@@ -328,7 +314,7 @@ MYSQL
   <div class=" col-12  col-sm-12 col-lg-6">
   
 
-  <input type="text" aria-label="Second Name" name="phone" id="phone"  placeholder="Mobile Number"  class="form-control">
+  <input type="number" aria-label="Second Name" name="phone" id="phone"  placeholder="Mobile Number"  class="form-control">
   </div>
   <div class=" col-12  col-sm-12 col-lg-6">
     <!-- <input type="email" placeholder="Email Id"> -->

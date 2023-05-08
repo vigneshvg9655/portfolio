@@ -4,7 +4,8 @@
     margin-left: 0px;
 }
 body{
-    background: linear-gradient(to right, #EA5FBA,#E47D72,#CF96F7);
+    /* background: linear-gradient(to right, #EA5FBA,#E47D72,#CF96F7); */
+    background: linear-gradient(to right, #cc2b5e, #753a88);
    
 }
 #namev h5 img{
@@ -12,14 +13,15 @@ body{
 
     margin-top: -11px;
     margin-left: 0;
-    margin-top: -19px;
+    margin-top: -14px;
     }
 
 .home-section .navbar{
     width: 100%;
     background-color: white;
     /* z-index: 1030; */
-    background: linear-gradient(to right, #EA5FBA,#E47D72,#CF96F7);
+    /* background: linear-gradient(to right, #EA5FBA,#E47D72,#CF96F7); */
+    background: linear-gradient(to right, #cc2b5e, #753a88);
 }
 .home-section .collapse ul a:hover{
     color: #1dc9cb !important;
@@ -129,10 +131,8 @@ background-size: cover;
 text-align: center;
 margin-top: 22px;
 font-family: 'Montserrat';
-color: #1dc9cb;
-
-
-font-size: 2.5rem;
+color: #383a42;;
+font-size: 3.5rem;
 }
 h5{
     /* font-family: 'Castoro Titling', cursive;
@@ -158,7 +158,15 @@ font-family: 'Noto Serif', serif;
     font-family: 'Montserrat';
     
 }
-
+#about h4{
+    text-align: center;
+    margin-top: 53px;
+    font-size: 1.75rem;
+    background-color: #d5dde5;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
 #about h5 {
     text-align: center;
  margin-top: 53px;
@@ -209,12 +217,10 @@ font-family: 'Noto Serif', serif;
             .headere{
 
                 text-align: center;
-                margin-top:146px;
+                margin-top:253px;;
                 font-family: 'Montserrat';
-                color: #1dc9cb;
-                
-                
-                font-size: 2.5rem;
+                color: #383a42;;
+                font-size: 3.5rem;
                 }
                 #imagess img{
                     margin-top: -92px;
@@ -253,6 +259,17 @@ background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+#imagescom1 img{
+    margin-top: -57px;
+      width: 100px;
+    border-radius: 78px;
+    background: #a5b1a5;
+    text-align: center;
+box-shadow: 0 0 0 10px #d5dde5;
+display: block;
+padding: 4px;
 }
 
 
@@ -322,7 +339,7 @@ color: #fff;
         /* background-color: gray; */
       }
     #inputme textarea{
-        
+        color: grey;
       min-height: 281px;
       width: 100%;
       font-style: oblique;
