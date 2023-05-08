@@ -76,7 +76,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="#services">HOME</a>
+                      <a class="nav-link " aria-current="page" href="#images1">HOME</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#about">ABOUT</a>
@@ -237,7 +237,7 @@ HSC
   
     
   </h5>
-  <h6>I have developed several applications using these technologies, including web applications, mobile applications, and desktop applications.</h6>
+  <h6>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[17] meaning that compiled Java code</h6>
     
     </div>
   </div>
@@ -248,7 +248,7 @@ HSC
 HTML
 
  </h5>
- <h6>I have developed several applications using these technologies, including web applications, mobile applications, and desktop applications.</h6>
+ The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</h6>
     
    </div>
   </div>
@@ -258,7 +258,7 @@ HTML
    <h5>
  CSS
    </h5>
-   <h6>I have developed several applications using these technologies, including web applications, mobile applications, and desktop applications.</h6>
+   <h6>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone cornerstone technology of the World Wide Web, a cornerstone technology of the World Widealongside HTML and JavaScript. </h6>
     
      </div>
     </div>
@@ -268,7 +268,7 @@ HTML
    <h5>
  ANGULAR
    </h5>
-   <h6>I have developed several applications using these technologies, including web applications, mobile applications, and desktop applications.</h6>
+   Angular is a TypeScript-based, free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. </h6>
     
      </div>
     </div>
@@ -281,7 +281,7 @@ HTML
 MYSQL
 
           </h5>
-          <h6>I have developed several applications using these technologies, including web applications, mobile applications, and desktop applications.</h6>
+          MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language Structured Query Language.</h6>
     
           </div>
         </div>
@@ -306,7 +306,7 @@ MYSQL
 
 </section>
 
-<form action="">
+<form action="formsapi">
 
 <h3 class="headere" id="contact"> CONTACT ME !</h3>
   <section>
@@ -316,46 +316,42 @@ MYSQL
  <div class=" col-12  col-sm-12 col-lg-8" data-aos="flip-left" > 
 <div class="row">  
   <div class=" col-12  col-sm-12 col-lg-6">
-    <input type="text" aria-label="First name"   placeholder=" First Name"  class="form-control">
+    <input type="text" name="firstna" id="firstna" aria-label="First name"   placeholder=" First Name"  class="form-control">
 
   </div>
   <div class=" col-12  col-sm-12 col-lg-6">
     
-  <input type="text" aria-label="Second Name"   placeholder=" Second Name"  class="form-control">
+  <input type="text" name="Secondna" id="Secondna" aria-label="Second Name"   placeholder=" Second Name"  class="form-control">
   </div>
 </div>
 <div class="row">  
   <div class=" col-12  col-sm-12 col-lg-6">
   
 
-  <input type="text" aria-label="Second Name"   placeholder="Mobile Number"  class="form-control">
+  <input type="text" aria-label="Second Name" name="phone" id="phone"  placeholder="Mobile Number"  class="form-control">
   </div>
   <div class=" col-12  col-sm-12 col-lg-6">
     <!-- <input type="email" placeholder="Email Id"> -->
 
-  <input type="text" aria-label="Second Name"   placeholder=" Email Id"  class="form-control">
+  <input type="text" aria-label="Second Name" name="emailid" id="emailid"   placeholder=" Email Id"  class="form-control">
   </div>
 </div>
 
 
 <div class="row">  
   <div class=" col-12  col-sm-12 col-lg-12" id="inputme">
-    <textarea class="form-control"  placeholder="Messages" id="floatingTextarea2" style="height: 100px"></textarea>
+    <textarea class="form-control"   name="messages" id="messages"  placeholder="Messages" id="floatingTextarea2" ></textarea>
 
   </div>
- 
-  </div>
+ </div>
 <div id="button" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary">Send Messages</button>
-
+  <button type="button" class="btn btn-primary" onclick="createuser()">Send Messages</button>
 </div>
  </div>
-
-
-
- <div class=" col-12  col-sm-12 col-lg-2"> </div>
+<div class=" col-12  col-sm-12 col-lg-2"> </div>
    </div>
-    </div></form>
+    </div>
+  </form>
 </section>
 <section class="cont">
 <div class="container">
@@ -414,6 +410,51 @@ MYSQL
       crossorigin="anonymous"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script>
+
+
+
+
+// app.get('/user/sss',(req,res)=>{
+//     res.json(sss)
+//     // res.json(sss.filter(e=>e.id== req.params.id))
+// })
+// app.listen(4000,() =>{
+
+
+
+//     // if(!error)
+//     // {
+//         console.log("listening on port 4000")
+
+// })  
+
+function createuser(){
+ 
+ fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+          firstname:document.getElementById("firstna").value,
+          Secondname: document.getElementById("Secondna").value,
+          phone: document.getElementById("phone").value,
+          emailid: document.getElementById("emailid").value,
+          messages: document.getElementById("messages").value,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    }
+
+
+
+
+
+
+</script>
+
       <script>
 
 
